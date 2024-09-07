@@ -1,0 +1,1 @@
+export const WIZARDING_WORLD_API_URL = "https://wizard-world-api.herokuapp.com";
