@@ -2,6 +2,7 @@ import { Layout } from "../types/Layout";
 
 export const LAYOUTS: Layout = {
     spacing: {
+        xxs: 4,
         xs: 8,
         sm: 12,
         md: 24,
@@ -15,6 +16,7 @@ export const LAYOUTS: Layout = {
         xl: 50,
     },
     fontSize: {
+        xs: 13,
         sm: 14,
         md: 16,
         lg: 20,
@@ -25,5 +27,6 @@ export const LAYOUTS: Layout = {
         md: 28,
         lg: 36,
         xl: 50,
+        xxl: 60,
     },
 };

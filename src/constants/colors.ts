@@ -10,4 +10,5 @@ export const COLORS = {
     success: "#00712D",
     warning: "#FFCC00",
     info: "#0000FF",
+    shadow_error: "rgba(214, 42, 42, 0.8)",
 };

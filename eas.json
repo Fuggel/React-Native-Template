@@ -15,16 +15,8 @@
                 "simulator": true
             }
         },
-        "production": {
-            "env": {
-                "EXPO_PUBLIC_API_URL": "EXPO_PUBLIC_API_URL"
-            }
-        },
-        "test": {
-            "env": {
-                "EXPO_PUBLIC_API_URL": "EXPO_PUBLIC_API_URL"
-            }
-        }
+        "production": {},
+        "test": {}
     },
     "submit": {
         "production": {}

@@ -1,5 +1,6 @@
 export interface Layout {
     spacing: {
+        xxs: number;
         xs: number;
         sm: number;
         md: number;
@@ -13,6 +14,7 @@ export interface Layout {
         xl: number;
     };
     fontSize: {
+        xs: number;
         sm: number;
         md: number;
         lg: number;
@@ -23,5 +25,6 @@ export interface Layout {
         md: number;
         lg: number;
         xl: number;
+        xxl: number;
     };
 }

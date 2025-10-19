@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "../store";
 
-
 const App = () => {
     return (
         <Provider store={store}>
@@ -29,11 +28,11 @@ export default App;
 
 const styles = StyleSheet.create({
     scrollView: {
-        height: "100%"
+        height: "100%",
     },
     constainer: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
-    }
+        alignItems: "center",
+    },
 });

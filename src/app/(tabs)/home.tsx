@@ -1,20 +1,25 @@
-import Loading from "@/src/components/Loading";
-import { COLORS, LAYOUTS } from "@/src/constants";
-import useSpells from "@/src/hooks/useSpells";
+import Loading from "@/components/Loading";
+import { COLORS, LAYOUTS } from "@/constants";
+import useSpells from "@/hooks/useSpells";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 const Home = () => {
-    const { spells, loadingSpells, errorSpells } = useSpells({ spellType: "DarkArts" });
+    const { spells, loadingSpells, errorSpells } = useSpells({
+        spellType: "DarkArts",
+    });
 
     if (loadingSpells) return <Loading />;
-    if (errorSpells) return <Text style={styles.errorText}>Something went wrong...</Text>;
+    if (errorSpells)
+        return <Text style={styles.errorText}>Something went wrong...</Text>;
 
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
             {spells?.map((spell) => (
                 <View key={spell.id} style={styles.spellCard}>
                     <Text style={styles.spellName}>Name: {spell.name}</Text>
-                    <Text style={styles.spellDetail}>Effect: {spell.effect}</Text>
+                    <Text style={styles.spellDetail}>
+                        Effect: {spell.effect}
+                    </Text>
                     <Text style={styles.spellDetail}>Type: {spell.type}</Text>
                     <Text style={styles.spellDetail}>Light: {spell.light}</Text>
                 </View>

@@ -1,7 +1,6 @@
+import TabIcon from "@/components/TabIcon";
+import { COLORS, icons } from "@/constants";
 import { Tabs } from "expo-router";
-
-import { COLORS, icons } from "@/src/constants";
-import TabIcon from "@/src/components/TabIcon";
 
 const TabsLayout = () => {
     return (
@@ -13,7 +12,7 @@ const TabsLayout = () => {
                 tabBarStyle: {
                     backgroundColor: COLORS.white,
                     height: "12%",
-                }
+                },
             }}
         >
             <Tabs.Screen
@@ -28,7 +27,7 @@ const TabsLayout = () => {
                             name="Home"
                             focused={focused}
                         />
-                    )
+                    ),
                 }}
             />
             <Tabs.Screen
@@ -43,7 +42,7 @@ const TabsLayout = () => {
                             name="Create"
                             focused={focused}
                         />
-                    )
+                    ),
                 }}
             />
             <Tabs.Screen
@@ -58,7 +57,7 @@ const TabsLayout = () => {
                             name="Profile"
                             focused={focused}
                         />
-                    )
+                    ),
                 }}
             />
             <Tabs.Screen
@@ -73,7 +72,7 @@ const TabsLayout = () => {
                             name="Settings"
                             focused={focused}
                         />
-                    )
+                    ),
                 }}
             />
         </Tabs>
